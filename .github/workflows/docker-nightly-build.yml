@@ -19,6 +19,7 @@ jobs:
   timescaledb:
 
     name: PG${{ matrix.pg }}
+    if: github.repository == 'timescale/timescaledb-docker'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
